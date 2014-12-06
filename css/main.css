@@ -67,6 +67,14 @@ a.twitterlink:hover {
   margin-bottom: 0.5em;
 }
 
+.top-nav .title {
+  display: inline;
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+  border: 1px solid #ccc;
+}
+
 .top-nav ul, .top-nav li {
   margin: 0;
   padding: 0;
@@ -99,7 +107,7 @@ a.twitterlink:hover {
 /* ------------------------ */
 
 .header {
-  margin-top: 4.5em;
+  margin-top: 4.4em;
   padding-top: 5em;
   padding-bottom: 5em;
   text-align: center;
@@ -208,6 +216,7 @@ a.twitterlink:hover {
 .project .links {
   text-align: right;
   margin-top: 0.5em;
+  font-size: 1.2em;
 }
 
 /* footer */
