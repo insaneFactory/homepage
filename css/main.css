@@ -1,22 +1,24 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans|Roboto|Audiowide);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans|Roboto|Audiowide);*/
 
 /* basics */
 
 /* ------------------------ */
 
+html {
+  font-size: 1.0em;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1.0em;
   margin: 0;
   padding: 0;
   background: #fff/*#f4f4f4*/;
   color: #131313;
 }
 
-h1, h2, p {
+h1, h2, h3, p, section {
   margin: 0;
   padding: 0;
-  font-size: 1.0em;
   font-weight: normal;
 }
 
@@ -98,7 +100,7 @@ a.twitterlink:hover {
 }
 
 .top-nav a:hover {
-  color: #ff9300;
+  color: #337ab7;
 }
 
 
@@ -111,7 +113,6 @@ a.twitterlink:hover {
   padding-top: 5em;
   padding-bottom: 5em;
   text-align: center;
-  /*background: rgb(63,76,107);*/
   background: rgb(59,103,158);
   background: -moz-linear-gradient(-45deg, rgba(59,103,158,1) 0%, rgba(43,136,217,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(59,103,158,1)), color-stop(50%,rgba(43,136,217,1)), color-stop(51%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1)));
@@ -124,15 +125,13 @@ a.twitterlink:hover {
 
 .header h1 {
   font-family: "Audiowide", cursive;
-  font-size: 3.0em;
+  font-size: 2.0em;
   color: #fff;
 }
 
 .header h2 {
   color: #ddd;
-  /*text-shadow: 2px 2px #000000;*/
-  /*background-color: rgba(255, 255, 255, 0.5);*/
-  /*line-height: 2em;*/
+  font-size: 1.0em;
 }
 
 /* common section styles */
@@ -141,12 +140,29 @@ a.twitterlink:hover {
 
 .contentsections {
   width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.contentsections section {
+  margin: 1em 1em 0em 1em;
+}
+
+.contentsections section h1 {
+  font-size: 2em;
+}
+
+.contentsections section .content {
+  padding: 0em 0em;
+  font-size: 1.2em;
+  line-height: 1.5em;
 }
 
 .separator {
-  width: 90%;
+  width: 95%;
   height: 0;
-  margin-left: 5%;
+  margin: 1.5em 0.0em 1.5em 2.5%;
+  padding: 0;
   border-width: 1px 0px 0px 0px;
   border-style: solid;
   border-color: #ccc;
@@ -160,11 +176,19 @@ a.twitterlink:hover {
   height: 0;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1280px) {
   .contentsections {
-    width: 1400px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .contentsections section h1 {
+    font-size: 2.5em;
+  }
+  .contentsections section .content {
+    margin: 1em 0em;
+    padding: 0em 2em;
+    font-size: 1.5em;
   }
 }
 
@@ -173,18 +197,6 @@ a.twitterlink:hover {
 /* ------------------------ */
 
 .about {
-  padding: 2em 4em;
-}
-
-.about h1 {
-  font-size: 3em;
-}
-
-.about p {
-  margin: 1em 0em;
-  padding: 0em 2em;
-  font-size: 1.5em;
-  line-height: 1.5em;
 }
 
 /* projects */
@@ -192,31 +204,23 @@ a.twitterlink:hover {
 /* ------------------------ */
 
 .projects {
-  padding: 2em 4em;
-}
-
-.projects h1 {
-  font-size: 3em;
 }
 
 .project {
-  margin: 1em 0em;
-  padding: 0em 2em;
+  margin-top: 1.0em;
 }
 
 .project .title {
-  font-size: 2em;
+  font-size: 1.3em;
   color: #337ab7;
+  padding: 0.3em 0;
 }
 
 .project .description {
-  font-size: 1.5em;
 }
 
 .project .links {
-  text-align: right;
-  margin-top: 0.5em;
-  font-size: 1.2em;
+  padding: 0.3em 0;
 }
 
 /* footer */
@@ -224,8 +228,7 @@ a.twitterlink:hover {
 /* ------------------------ */
 
 .footer {
-  margin: 0;
-  padding: 2em;
+  margin: 0 0 2.0em 0;
 }
 
 .footer .copyright {
