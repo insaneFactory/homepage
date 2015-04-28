@@ -1,0 +1,19 @@
+#
+# Single page redirect example (301 = permanent; 302 = temporary):
+#   Redirect 301 /if-svnadmin/ http://svnadmin.insanefactory.com
+#
+# Multi redirect:
+#   RedirectMatch 301 ^/if-svnadmin(.*)$ http://svnadmin.insanefactory.com
+#
+
+# SVNAdmin redirects
+RedirectMatch 301 ^/if-svnadmin(.*)$ http://svnadmin.insanefactory.com
+
+# Persistent login
+RedirectMatch 301 ^/roundcube-persistent-login-plugin(.*) https://github.com/mfreiholz/Roundcube-Persistent-Login-Plugin
+
+
+# Color picker
+#Redirect permanent /if-colorpicker/ /
+# insaneSums
+#Redirect permanent /insanesums/ /
