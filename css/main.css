@@ -75,29 +75,30 @@ a.twitterlink:hover {
   padding: 18px 18px 19px 18px;
 }
 
-.top-nav ul, .top-nav li {
+.top-nav ul {
+  float: right;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.top-nav ul {
-  float: right;
-}
-
-.top-nav li {
+.top-nav ul li {
+  display: block;
   float: left;
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.top-nav li a {
+.top-nav ul li a {
+  background: #fff;
   color: #131313;
+  display: block;
   padding: 23px 12px;
   text-decoration: none;
 }
 
-.top-nav li a:hover {
+.top-nav ul li a:hover {
   background: #f9f9f9;
   color: #337ab7;
 }
@@ -174,22 +175,6 @@ a.twitterlink:hover {
   height: 0;
 }
 
-@media (min-width: 1280px) {
-  .contentsections {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .contentsections section h1 {
-    font-size: 2.5em;
-  }
-  .contentsections section .content {
-    margin: 1em 0em;
-    padding: 0em 2em;
-    font-size: 1.5em;
-  }
-}
-
 /* about */
 
 /* ------------------------ */
@@ -232,4 +217,54 @@ a.twitterlink:hover {
 .footer .copyright {
   text-align: center;
   color: #666;
+}
+
+/* ------------------------ */
+
+/* mobile overwrites */
+
+/* ------------------------ */
+
+@media (max-width: 800px) {
+
+  /* navigation */
+
+  /*.top-nav .menutoggler {
+    display: inline;
+  }
+
+  .top-nav .links {
+    display: none;
+  }
+
+  .top-nav ul.links {
+    clear: both;
+    display: block;
+    float: none;
+  }
+
+  .top-nav ul.links li {
+    float: none;
+  }
+
+  .top-nav ul.links li a {
+    padding: 9px;
+  }*/
+
+}
+
+@media (min-width: 1280px) {
+  .contentsections {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contentsections section h1 {
+    font-size: 2.5em;
+  }
+  .contentsections section .content {
+    margin: 1em 0em;
+    padding: 0em 2em;
+    font-size: 1.5em;
+  }
 }
