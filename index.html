@@ -22,6 +22,9 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="http://forum.insanefactory.com">Community</a></li>
       </ul>
+      <ul class="menutoggle">
+        <li><a href=""><img src="img/ic_menu_black_36dp.png"></a></li>
+      </ul>
     </div>
 
     <div class="header">
@@ -95,6 +98,17 @@
     <div class="footer">
       <div class="copyright">Copyright &copy; 2015 insaneFactory</div>
     </div>
+
+    <!--
+      mobile navigation
+    -->
+    <script type="text/javascript">
+    jQuery('.menutoggle a').click(function (e) {
+      e.preventDefault();
+      var eLinks = jQuery('.top-nav ul.links');
+      eLinks.toggle();
+    });
+    </script>
 
   </body>
 </html>
